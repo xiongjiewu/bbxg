@@ -21,7 +21,7 @@ class ListController extends BaseController
         $goods = $good_service->getList($where, $page, $limit);
         foreach($goods as &$good) {
             $good['url'] = route('good.detail',['id' => $good['id']]);
-            $good['desc'] = mb_substr(strip_tags($good['desc']), 0, 70, 'UTF-8');
+            $good['desc'] = mb_substr(strip_tags($good['desc']), 0, 55, 'UTF-8');
             $good['view'] = $good_service->showViewCount($good['id']);
         }
         $total = $good_service->getTotal($where);

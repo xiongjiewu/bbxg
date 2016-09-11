@@ -14,7 +14,7 @@
         <ul class="item">
             @foreach($goods as $good)
                 <li>
-                    <a href="">
+                    <a href="{{$good['url']}}">
                         <img src="{{$good['surface']}}">
                     </a>
                     <dl>
