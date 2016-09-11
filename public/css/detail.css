@@ -1,0 +1,157 @@
+.good-show{
+    background: #fff;
+    border-top: 1px #e3e3e3 solid;
+    width: 100%;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+section {
+    position: relative;
+    overflow: hidden;
+}
+.ect-margin-tb {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+.ect-margin-lr {
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+h4 {
+    margin: 0;
+}
+.goods-option {
+    border-top: 1px solid #e3e3e3;
+}
+.focus {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.focus .bd {
+    position: relative;
+    z-index: 0;
+}
+.focus .bd li {
+    height: auto;
+    overflow: hidden;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.ect-padding-lr {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+.focus .bd li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+section span {
+    float: left;
+}
+span.view {
+    margin-left: 10px;
+}
+section.choose {
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    margin: 0;
+    padding:20px 0.6em 20px 0.6em;
+    background-color: #eee;
+}
+.good-style ul {
+    font-size: 16px;
+}
+.good-style ul li{
+    padding: 0.6em;
+    border-bottom:1px solid #ddd;
+}
+.good-style ul li input {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.good-style ul li textarea{
+    width:96%;
+    height: 80px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.feedback-buyer {
+    border-top: none;
+}
+.ect-padding-tb {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+.goods-submit {
+    background: #f3f3f3;
+    height: 4.3em;
+}
+.goods-submit div {
+    left: 0.8em;
+    right: 4.2em;
+    max-width: 640px;
+}
+.goods-submit div a {
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.ect-bg {
+    background: #ff7043 !important;
+    color: #fff !important;
+    height: auto;
+    overflow: hidden;
+}
+.ect-colorf {
+    color: #fff !important;
+}
+.ect-btn-info {
+    width: 100%;
+}
+.btn-info {
+    border: none;
+    background: #aaa;
+    padding: 0.5em 0;
+    font-size: 1.3em;
+}
+.goods-submit p {
+    color: red;
+    font-size: 16px;
+}
+

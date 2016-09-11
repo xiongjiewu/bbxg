@@ -1,0 +1,12 @@
+body {
+    background: #f7f7f7;
+    color: #555;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 640px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.content {
+    background: #f7f7f7;
+    overflow: hidden;
+}
