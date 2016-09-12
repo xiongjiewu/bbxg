@@ -85,24 +85,23 @@ class GoodService
         $good->classification_id = $data['classification_id'];
         $good->desc = $data['desc'];
         $good->status = Good::STATUS_SELL;
-        if ($good->save()) {
-            $production = explode("\n", $data['production']);
-            foreach($production as $p) {
-                $production_model = new Production();
-                $production_model->good_id = $good->id;
-                $production_model->desc = $p;
-                $production_model->status = Production::STATUS_USE;
-                $production_model->save();
-            }
-            $size = explode("\n", $data['size']);
-            foreach($size as $s) {
-                $size_model = new Size();
-                $size_model->good_id = $good->id;
-                $size_model->desc = $s;
-                $size_model->status = Size::STATUS_USE;
-                $size_model->save();
-            }
+        $production = explode("\n", $data['production']);
+        foreach($production as $p) {
+            $production_model = new Production();
+            $production_model->good_id = $good->id;
+            $production_model->desc = $p;
+            $production_model->status = Production::STATUS_USE;
+            $production_model->save();
         }
+        $size = explode("\n", $data['size']);
+        foreach($size as $s) {
+            $size_model = new Size();
+            $size_model->good_id = $good->id;
+            $size_model->desc = $s;
+            $size_model->status = Size::STATUS_USE;
+            $size_model->save();
+        }
+
         return false;
     }
 
