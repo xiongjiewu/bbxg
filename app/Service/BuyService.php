@@ -1,6 +1,8 @@
 <?php namespace App\Service;
 
 use App\Model\Buy;
+use App\Service\ClassificationService;
+use App\Service\GoodService;
 
 class BuyService
 {
@@ -25,6 +27,12 @@ class BuyService
             ->limit($limit)
             ->get()
             ->toArray();
+        $classification_service = new ClassificationService();
+        $good_service = new GoodService();
+        foreach($list as &$order) {
+            $order['good'] = $good_service->show($order['good_id']);
+            $order['classification'] = $classification_service->show($order['good']['classification_id']);
+        }
         return $list;
     }
 

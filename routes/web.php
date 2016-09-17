@@ -13,3 +13,4 @@ Route::put('/admin/order/{id}/{action}', ['middleware' => ['auth'], 'as' => 'adm
 Route::get('/admin/classification/list', ['middleware' => ['auth'], 'as' => 'admin.classification.list', 'uses' => 'ClassificationController@index']);
 Route::get('/admin/classification/add', ['middleware' => ['auth'], 'as' => 'admin.classification.add', 'uses' => 'ClassificationController@add']);
 Route::post('/admin/classification/add', ['middleware' => ['auth'], 'as' => 'admin.classification.addAction', 'uses' => 'ClassificationController@addAction']);
+Route::get('/admin/order/export', ['middleware' => ['auth'], 'as' => 'admin.order.export', 'uses' => 'OrderController@export']);
