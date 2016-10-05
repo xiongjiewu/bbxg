@@ -3,6 +3,8 @@
 use App\Model\Buy;
 use App\Service\ClassificationService;
 use App\Service\GoodService;
+use App\Model\Size;
+use App\Model\Production;
 
 class BuyService
 {
@@ -32,6 +34,12 @@ class BuyService
         foreach($list as &$order) {
             $order['good'] = $good_service->show($order['good_id']);
             $order['classification'] = $classification_service->show($order['good']['classification_id']);
+            $order['production'] = Production::query()
+                ->find($order['production_id'])
+                ->toArray();
+            $order['size'] = Size::query()
+                ->find($order['size_id'])
+                ->toArray();
         }
         return $list;
     }

@@ -58,11 +58,14 @@ class OrderController extends Controller
         $order = $buy_service->getList([], $page, $this->limit);
         $excel_data = [];
         $excel_data[] = [
-            '商品ID',
+            '订单ID',
             '客户名字',
             '手机号码',
             '收货地址',
             '商品ID',
+            '商品名称',
+            '产品套餐',
+            '选择型号',
             '分类',
             '留言',
         ];
@@ -73,6 +76,9 @@ class OrderController extends Controller
                 $value['phone'],
                 $value['address'],
                 $value['good_id'],
+                $value['good']['name'],
+                $value['production']['desc'],
+                $value['size']['desc'],
                 $value['classification']['name'],
                 $value['feedback'],
             ];
